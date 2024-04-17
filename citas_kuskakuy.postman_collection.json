@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "eec177f5-fe85-45ed-b5d8-0f335183ece1",
+		"name": "citas_kuskakuy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9126998"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8090/kuskakuy/terapeuta",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWVnb21ndCIsImlhdCI6MTcxMzMzMTQxNSwiZXhwIjoxNzEzNDE3ODE1fQ.wXFsgBTFjysyNJ0ZzWBsx2oe8SmFrSggaLZ9P3qzifw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"estado\" : true,\n    \"nombre_terapeuta\" : \"camote\",\n    \"apellido_terapeuta\" : \"camote\",\n    \"especialidad_terapeuta\" : \"psicologia\",\n    \"direccion_terapeuta\" : \"su casita\",\n    \"telefono_terapeuta\" : \"5555riente\",\n    \"nacionalidad_terapeuta\" : \"peruana\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/kuskakuy/terapeuta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"kuskakuy",
+						"terapeuta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/kuskakuy/api/v1/auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\" : \"diegomgt\",\n    \"password\" : \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/kuskakuy/api/v1/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"kuskakuy",
+						"api",
+						"v1",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/kuskakuy/servicio",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWVnb21ndCIsImlhdCI6MTcxMzMzMTQxNSwiZXhwIjoxNzEzNDE3ODE1fQ.wXFsgBTFjysyNJ0ZzWBsx2oe8SmFrSggaLZ9P3qzifw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre_servicio\" : \"Terapia de conducta\",\n    \"descripcion_servicio\" : \"es para que no seas cascarrabias\",\n    \"precio_servicio\" : 50,\n    \"estado\" : true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/kuskakuy/servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"kuskakuy",
+						"servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/kuskakuy/paciente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWVnb21ndCIsImlhdCI6MTcxMzMzMTQxNSwiZXhwIjoxNzEzNDE3ODE1fQ.wXFsgBTFjysyNJ0ZzWBsx2oe8SmFrSggaLZ9P3qzifw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre_paciente\" : \"elizeth\",\n    \"apellido_paciente\" : \"rojas\",\n    \"genero_paciente\" : \"machona\",\n    \"telefono_paciente\" : \"986856868\",\n    \"correo_paciente\" : \"testing123@gg.com\",\n    \"fecha_registro\" : \"2023-04-09\",\n    \"estado\" : true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/kuskakuy/paciente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"kuskakuy",
+						"paciente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/kuskakuy/registrocita",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWVnb21ndCIsImlhdCI6MTcxMzMzMTQxNSwiZXhwIjoxNzEzNDE3ODE1fQ.wXFsgBTFjysyNJ0ZzWBsx2oe8SmFrSggaLZ9P3qzifw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha_registro\" : \"2023-04-09\",\n    \"costo\" : 100,\n    \"faltante\" : 0,\n    \"pago\" : 100,\n    \"comentario\" : \"no te lo puedo creer, horror\",\n    \"paciente\" : {\n        \"codigo\" : 1\n    },\n    \"terapeuta\" : {\n        \"codigo\" : 1\n    },\n    \"servicio\" : {\n        \"codigo\" : 1\n    },\n    \"fecha_cita\" : \"2025-02-12\",\n    \"hora_inicio_cita\" : 14,\n    \"hora_fin_cita\" : 12,\n    \"estado\" : true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/kuskakuy/registrocita",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"kuskakuy",
+						"registrocita"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/kuskakuy/registrocita/22",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWVnb21ndCIsImlhdCI6MTcxMzMzMTQxNSwiZXhwIjoxNzEzNDE3ODE1fQ.wXFsgBTFjysyNJ0ZzWBsx2oe8SmFrSggaLZ9P3qzifw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha_registro\" : \"2023-04-09\",\n    \"costo\" : 100,\n    \"faltante\" : 0,\n    \"pago\" : 100,\n    \"comentario\" : \"no te lo puedo cresssser, horrosssr\",\n    \"paciente\" : {\n        \"codigo\" : 1\n    },\n    \"terapeuta\" : {\n        \"codigo\" : 1\n    },\n    \"servicio\" : {\n        \"codigo\" : 1\n    },\n    \"fecha_cita\" : \"2025-02-22\",\n    \"hora_inicio_cita\" : 15,\n    \"hora_fin_cita\" : 18,\n    \"estado\" : true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/kuskakuy/registrocita/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"kuskakuy",
+						"registrocita",
+						"22"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
